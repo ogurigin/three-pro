@@ -9,7 +9,7 @@
     <div class="nav-title">{{item.title}}</div>
     <ul class="nav-list" v-for="menu in item.list" :key="menu.id">
       <li class="nav-item" @click="goItem(menu.path )">
-        <img :src="menu.cover" alt="封面">
+        <img  class="cover" :src="menu.cover" alt="封面">
         <!-- <img src="@/assets/cover/torusGeometry.jpg" alt="封面" class="cover"> -->
         <div class="title">{{menu.title}}</div>
       </li>
@@ -19,7 +19,7 @@
 </template>
 
 <script setup>
- import cover1 from '../assets/cover/textGeometry.jpg';
+ import cover1 from '@/assets/cover/torusGeometry.jpg';
 
 
 const menuList = [
