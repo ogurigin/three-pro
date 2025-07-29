@@ -33,8 +33,9 @@ const menuList = [
     ]
   },
 ]
+const router = useRouter();
 const goItem = (path) => {
-  window.location.href = path;
+  router.push({path});
 }
 </script>
 <style>
